@@ -1,0 +1,2140 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10000.16.0812.0001                               -->
+<workbook source-build='10.0.0 (10000.16.0812.0001)' source-platform='win' version='10.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='vocanical_database(inUsed)' inline='true' name='federated.08nq24d0q11e6v1e7jda20u31m58' version='10.0'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='vocanical_database(inUsed)' name='textscan.0qbiy3o1vprkwr12hpot60v1j1g2'>
+            <connection class='textscan' directory='C:/Users/qqyao/Desktop' filename='vocanical_database(inUsed).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0qbiy3o1vprkwr12hpot60v1j1g2' name='vocanical_database(inUsed).csv' table='[vocanical_database(inUsed)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Number' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Country' ordinal='2' />
+            <column datatype='string' name='Region' ordinal='3' />
+            <column datatype='string' name='Type' ordinal='4' />
+            <column datatype='string' name='Activity Evidence' ordinal='5' />
+            <column datatype='string' name='Last Known Eruption' ordinal='6' />
+            <column datatype='real' name='Latitude' ordinal='7' />
+            <column datatype='real' name='Longitude' ordinal='8' />
+            <column datatype='integer' name='Elevation (Meters)' ordinal='9' />
+            <column datatype='string' name='Tectonic Setting' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Activity Evidence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Activity Evidence]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Activity Evidence</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Known Eruption</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Known Eruption]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Last Known Eruption</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Elevation (Meters)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Elevation (Meters)]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Elevation (Meters)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tectonic Setting</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tectonic Setting]</local-name>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias>Tectonic Setting</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[vocanical_database(inUsed).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Number]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+      <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+      <group name='[Type &amp; Region (Combined) 1]' name-style='unqualified' user:ui-builder='nest-group'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Type]' />
+          <groupfilter function='level-members' level='[Region]' />
+        </groupfilter>
+      </group>
+      <group caption=' Region &amp;Type &amp;(Combined)' name='[Type &amp; Region (Combined)]' name-style='unqualified' user:ui-builder='nest-group'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Type]' />
+          <groupfilter function='level-members' level='[Region]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.542044' measure-ordering='alphabetic' measure-percentage='0.457956' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Maar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Stratovolcano&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Caldera&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pyroclastic shield&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fissure vent&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Volcanic field&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cone&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Shield&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Complex&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Crater rows&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Subglacial&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Explosion crater&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tuff ring&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Compound&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lava dome&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Submarine&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Lava cone&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tuff cone&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pyroclastic cone&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Type &amp; Region (Combined)]' type='palette'>
+            <map to='#499894'>
+              <bucket>(&quot;Caldera&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Complex&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Maar&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Shield&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Tuff cone&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Caldera&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Complex&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Lava dome&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Shield&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Submarine&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Caldera&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Complex&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Maar&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Shield&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Submarine&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Caldera&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Compound&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Maar&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Pyroclastic shield&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Submarine&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Unknown&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Caldera&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Complex&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Maar&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Shield&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Subglacial&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Tuff cone&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Caldera&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Complex&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Lava cone&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Maar&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Shield&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Submarine&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Complex&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Explosion crater&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Shield&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Submarine&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Caldera&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Complex&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Maar&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Shield&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Submarine&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Complex&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Crater rows&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Lava dome&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Shield&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Submarine&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Caldera&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Complex&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Lava cone&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Maar&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Shield&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Submarine&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Caldera&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Compound&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Pyroclastic shield&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Submarine&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Unknown&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Caldera&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Compound&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Shield&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Submarine&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Complex&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Crater rows&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Lava dome&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Shield&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Submarine&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Complex&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Explosion crater&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Lava dome&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Shield&quot;,&quot;Hawaii and Pacific Ocean&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Submarine&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Caldera&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Compound&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Maar&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Pyroclastic shield&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Subglacial&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Tuff cone&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Caldera&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Complex&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Lava cone&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Maar&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Shield&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Tuff cone&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Caldera&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Complex&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Maar&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Shield&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Submarine&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Caldera&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Cone&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Shield&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Hawaii and Pacific Ocean&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Submarine&quot;,&quot;Hawaii and Pacific Ocean&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Caldera&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Compound&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Maar&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Pyroclastic shield&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Subglacial&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Tuff ring&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Caldera&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Complex&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Maar&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Shield&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Submarine&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Type &amp; Region (Combined) 1]' type='palette'>
+            <map to='#499894'>
+              <bucket>(&quot;Caldera&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Complex&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Maar&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Shield&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>(&quot;Tuff cone&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Caldera&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Complex&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Lava dome&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Shield&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Submarine&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Caldera&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Complex&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Maar&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Shield&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Submarine&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Caldera&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Compound&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Maar&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Pyroclastic shield&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Submarine&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>(&quot;Unknown&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Caldera&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Complex&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Maar&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Shield&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Subglacial&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>(&quot;Tuff cone&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Caldera&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Complex&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Lava cone&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Maar&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Shield&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>(&quot;Submarine&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Complex&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Explosion crater&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Shield&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Submarine&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Caldera&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Complex&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Maar&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Shield&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Submarine&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Complex&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Crater rows&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Lava dome&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Shield&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Submarine&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Caldera&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Complex&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Lava cone&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Maar&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Shield&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>(&quot;Submarine&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Caldera&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Compound&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Pyroclastic shield&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Submarine&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>(&quot;Unknown&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Caldera&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Compound&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Shield&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Submarine&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Complex&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Crater rows&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Lava dome&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Shield&quot;,&quot;Atlantic Ocean&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Submarine&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Complex&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Explosion crater&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Lava dome&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Shield&quot;,&quot;Hawaii and Pacific Ocean&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Submarine&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Caldera&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Compound&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Maar&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Pyroclastic shield&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Subglacial&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>(&quot;Tuff cone&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Caldera&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Complex&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Lava cone&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Maar&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Shield&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>(&quot;Tuff cone&quot;,&quot;Africa and Red Sea&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Caldera&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Complex&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;Iceland and Arctic Ocean&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Maar&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Shield&quot;,&quot;Japan\, Taiwan\, Marianas&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Submarine&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;New Zealand to Fiji&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Caldera&quot;,&quot;West Indies&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Cone&quot;,&quot;Kuril Islands&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Antarctica&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Shield&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Hawaii and Pacific Ocean&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Submarine&quot;,&quot;Hawaii and Pacific Ocean&quot;)</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Caldera&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Compound&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Lava dome&quot;,&quot;Indonesia&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Maar&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Pyroclastic shield&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Subglacial&quot;,&quot;South America&quot;)</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>(&quot;Tuff ring&quot;,&quot;Alaska&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Caldera&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Complex&quot;,&quot;Melanesia and Australia&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Fissure vent&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Maar&quot;,&quot;Canada and Western USA&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Pyroclastic cone&quot;,&quot;Mediterranean and Western Asia&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Shield&quot;,&quot;Kamchatka and Mainland Asia&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Stratovolcano&quot;,&quot;México and Central America&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Submarine&quot;,&quot;Middle East and Indian Ocean&quot;)</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>(&quot;Volcanic field&quot;,&quot;Philippines and SE Asia&quot;)</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Volcanoes  Type Shorting&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vocanical_database(inUsed)' name='federated.08nq24d0q11e6v1e7jda20u31m58' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08nq24d0q11e6v1e7jda20u31m58'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:4]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Table' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined)]' direction='ASC' using='[federated.08nq24d0q11e6v1e7jda20u31m58].[sum:Number of Records:qk]' />
+          <sort class='computed' column='[federated.08nq24d0q11e6v1e7jda20u31m58].[none:Type:nk]' direction='DESC' using='[federated.08nq24d0q11e6v1e7jda20u31m58].[sum:Number of Records:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined)]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.08nq24d0q11e6v1e7jda20u31m58].[sum:Number of Records:qk]' palette='sunrise_sunset_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08nq24d0q11e6v1e7jda20u31m58].[none:Type:nk]</rows>
+        <cols>[federated.08nq24d0q11e6v1e7jda20u31m58].[pcto:sum:Number of Records:qk:4]</cols>
+        <percentages enabled='true' mode='table' />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Volcanes Type Shorting with Details&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vocanical_database(inUsed)' name='federated.08nq24d0q11e6v1e7jda20u31m58' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08nq24d0q11e6v1e7jda20u31m58'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined) 1]' direction='DESC' using='[federated.08nq24d0q11e6v1e7jda20u31m58].[sum:Number of Records:qk]' />
+          <sort class='computed' column='[federated.08nq24d0q11e6v1e7jda20u31m58].[none:Type:nk]' direction='DESC' using='[federated.08nq24d0q11e6v1e7jda20u31m58].[sum:Number of Records:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined) 1]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined) 1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.08nq24d0q11e6v1e7jda20u31m58].[none:Type:nk] / ([federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined) 1] / [federated.08nq24d0q11e6v1e7jda20u31m58].[none:Region:nk]))</rows>
+        <cols>[federated.08nq24d0q11e6v1e7jda20u31m58].[sum:Number of Records:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined)]</field>
+            <field>[federated.08nq24d0q11e6v1e7jda20u31m58].[none:Region:nk]</field>
+            <field>[federated.08nq24d0q11e6v1e7jda20u31m58].[none:Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined) 1]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined) 1]</field>
+            <field>[federated.08nq24d0q11e6v1e7jda20u31m58].[Type &amp; Region (Combined)]</field>
+            <field>[federated.08nq24d0q11e6v1e7jda20u31m58].[none:Region:nk]</field>
+            <field>[federated.08nq24d0q11e6v1e7jda20u31m58].[none:Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      OzUAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      AHNebP5/jj4Z8lnAEaoAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

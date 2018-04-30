@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Volcano Visualization</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <!--<span class="sr-only">Toggle navigation</span>-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">Volcano Visualization</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#TS_Type">TS_Type</a>
+                    </li>
+                    <li>
+                        <a href="#Vol_Type">Vol_Type</a>
+                    </li>
+					<li>
+                        <a href="#Vol_Region">Vol_Region</a>
+                    </li>
+					<li>
+                        <a href="#Top_Eruption">Top_Eruption</a>
+                    </li>
+					<li>
+                        <a href="#Top5_With_VEI">Top5_With_VEI</a>
+                    </li>
+					<li>
+                        <a href="#Vol_Erup">Vol_Erup</a>
+                    </li>
+					<li>
+                        <a href="#VolwithSetting_Type">VolwithSetting_Type</a>
+                    </li>
+					<li>
+                        <a href="#Vol_Earthquakes">Vol_Earthquakes</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="search"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">   				
+					
+					<div class="intro-message"> 					
+						<h1>&nbsp;&nbsp;Volcano Visualizations</h1>
+                        <h3>-- Fei Liu (3035460493), Xinwei Li (3035454949), Qingqing Yao (3035418622) --</h3>
+                        <br>
+                        <h3><a href="http://localhost:8080/Apps/test.html">Click here to interact with volcanical overall !</a></h3>					
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+    <!-- Page Content -->
+
+	<a  name="TS_Type"></a>
+    <div class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Ditribution based on Tectonic Settting Type</h2>
+                    <p class="lead">We want to find the relationship between tectonic setting and geographical area by using Tableau visualization tool.</p>
+					<a href="https://public.tableau.com/profile/liufei#!/vizhome/Book1_32274/Story1?publish=yes">https://public.tableau.com/profile/liufei#!/vizhome/Book1_32274/Story1?publish=yes</a>
+				</div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/TS_Type.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-a -->
+	
+	<a  name="Vol_Type"></a>
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Ditribution based on Volcano Type</h2>
+                    <p class="lead">It counts the number of Volcanoes with the same Volcano Type, and present the top 20 most common Volcano Type with the region distribution.</p>						
+					<p class="lead">Then, show the detail about the top 20 most common Volcano Type with the region distribution sorting from most to least.</p>						
+					<a href="https://public.tableau.com/profile/liufei#!/vizhome/TypeShorting_0/Dashboard1?publish=yes">https://public.tableau.com/profile/liufei#!/vizhome/TypeShorting_0/Dashboard1?publish=yes</a>
+					<p>&nbsp;</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+					<p>&nbsp;&nbsp;</p>
+                    <img class="img-responsive" src="img/volcano_type.png" alt="">
+					<p>&nbsp;</p>
+					<img class="img-responsive" src="img/detailed.jpg" alt="">
+					<p>&nbsp;</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
+	
+	<a  name="Vol_Region"></a>
+    <div class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Statistics of volcanoes in each region</h2>
+                    <p class="lead">Distribution for the relationship between the region and the amount of volcanoes.</p>
+					<p class="lead">The size of circles represent the number of volcanoes.</p>
+					<a href="https://public.tableau.com/profile/liufei#!/vizhome/volcanoesInEachRegion/1?publish=yes">https://public.tableau.com/profile/liufei#!/vizhome/volcanoesInEachRegion/1?publish=yes</a>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+					<p>&nbsp;</p>
+                    <img class="img-responsive" src="img/number_region.PNG" alt="">
+					<p>&nbsp;</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+	
+	<a  name="Top_Eruption"></a>
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Top 30 unrest volcanoes</h2>
+                    <p class="lead">The visulization is presented the top 30 volcanoes with the most number of eruptions from BC to 2018.</p>		
+					<a href="https://public.tableau.com/profile/liufei#!/vizhome/Top30Unrest/1?publish=yes">https://public.tableau.com/profile/liufei#!/vizhome/Top30Unrest/1?publish=yes</a>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <p>&nbsp;</p>
+					<img class="img-responsive" src="img/unrest.PNG" alt="">
+					<p>&nbsp;</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+	<a  name="Top5_With_VEI"></a>
+    <div class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Top 5 unrest volcanoes with VEI</h2>
+					<p class="lead">The intensity of every eruptions for top 5 unrest volcanoes.</p>
+                    <p class="lead">The depth of color represents the intensity of the volcanic eruption.</p>
+					<a href="https://public.tableau.com/profile/liufei#!/vizhome/VEI_0/1?publish=yes">https://public.tableau.com/profile/liufei#!/vizhome/VEI_0/1?publish=yes</a>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <p>&nbsp;</p>
+					<img class="img-responsive" src="img/top5_VEI.PNG" alt="">
+					<p>&nbsp;</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+	
+	<a  name="Vol_Erup"></a>
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Volcano eruption along with years</h2>
+                    <p class="lead">Tableau “lines (continuous)” to show the trend of volcanic eruptions along with years.</p>
+					<!-- https://public.tableau.com/profile/liufei#!/vizhome/Book3_7142/Dashboard1-->
+					<a href="https://public.tableau.com/profile/liufei#!/vizhome/Book2_20873/Sheet1">https://public.tableau.com/profile/liufei#!/vizhome/Book2_20873/Sheet1</a>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+					<p>&nbsp;</p>
+                    <img class="img-responsive" src="img/distribution_year.png" alt="">
+					<p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+	
+	<a  name="VolwithSetting_Type"></a>
+    <div class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Relationship between volcano types and tectonic setting</h2>
+                    <p class="lead">The attribute tectonic setting is splited into two subattributes: tectonic zone and crust depth.</p>
+					<p class="lead">The distribution is to show the relationship between volcano types and tectonic setting.</p>
+					<a href="https://public.tableau.com/profile/liufei#!/vizhome/typeVSsetting/1?publish=yes">https://public.tableau.com/profile/liufei#!/vizhome/typeVSsetting/1?publish=yes</a>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+					<p>&nbsp;</p>
+                    <img class="img-responsive" src="img/relation.PNG" alt="">
+					<p>&nbsp;</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+	
+	<a  name="Vol_Earthquakes"></a>
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Distribution for Global Volcanoes and Earthquakes</h2>
+                    <p class="lead">The purpose we choose these two datasets to visualize is that we want to know whether there is a relationship of them, and then find out some insights.</p>
+					<p class="lead">Orange points represent earthquakes’ spots, while yellow ones represent volcanoes’ spots.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-7  col-sm-6">
+					<img src="img/movie1.gif" alt="This is an animated gif image, but it does not move"/>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">					
+                        <li>
+                            <a href="#">Vocalno Visualization</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#TS_Type">TS_Type</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#Vol_Type">Vol_Type</a>
+                        </li>
+						<li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#Vol_Region">Vol_Region</a>
+                        </li>
+						<li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#Top_Eruption">Top_Eruption</a>
+                        </li>
+						<li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#Top5_With_VEI">Top5_With_VEI</a>
+                        </li>
+						<li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#Vol_Erup">Vol_Erup</a>
+                        </li><li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#VolwithSetting_Type">VolwithSetting_Type</a>
+                        </li>
+						</li><li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#Vol_Earthquakes">Vol_Earthquakes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
